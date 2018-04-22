@@ -14,56 +14,124 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+   
+      
   body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
-      color: #273043;
+      color: #F46036;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
 
-      color: #9381FF;
-      background-color:  #d3d4d9; 
+      color: #e7e7e7;
+      background-color:  #50AB5D; 
+      
   }
   .bg-2 { 
 
-      color: #474e5d;
-      background-color: #4b88a2; 
+      color: #2f2f2f;
+      background-color: #F46036; 
   }
   .bg-3 { 
-
-      color: #FFFFFa;
-      background-color: #ff2204;
-
-      color: #2f2f2f;
-      background-color: #e50f16; 
+      color: #e7e7e7;
+      background-color: #318ACE; 
   }
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 5%;
+      padding-bottom: 10%;
+      height: 400px;
+      position: relative;
+      opacity: 0.99999;
+      border-width: 10px;
+
   }
+      .text-block1{
+        position:absolute;
+        display: inline-block;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 49%;
+        padding-top: 5%;
+        
+        
+      }
+      
+      .text-block2{
+        position:absolute;
+        display: inline-block;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+
+          padding-left: 50%;
+          padding-top: 7%;
+      }
+      
+      .image-block1{
+        position:absolute;
+        display: inline-block;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        z-index: -1;
+        width: 51%;
+          
+      }
+      
+      .image-block2{
+        position:absolute;
+        display: inline-block;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 49%;
+        
+        z-index: -1;
+          
+      }
   .navbar {
       padding-top: 15px;
       padding-bottom: 15px;
       border: 0;
-      border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
+      
+      
+      
+      
   }
+      
+      .navbar-image{
+          border-width: thick;
+          border-color: #F46036;
+          border-radius: 30px;
+          width: 40px;
+
+        
+      }
+  
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      color: #F46036 !important;
+      
   }
+      
+
+      
+  
+
   li{
     font-size: 14px;
   }
   </style>
 </head>
-<body>
+<body >
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -71,66 +139,78 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">JOSEPH BAIN</a>
+      <img class = "navbar-image" src="JoefaceNp.jpg">
+      <a class="navbar-brand" >JOSEPH BAIN</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#" >ME</a></li>
+        <li><a href="page1.html">PROJECTS</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<div position = "fixed">
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
+   
+  <div class ="text-block1">
   <h3 class="margin">Who Am I?</h3>
   <h3>Here is some stuff about me</h3>
-  <div style="width:500px;margin:0 auto;text-align:left;">
-  <p >
+  
+  <p>
     
-    <ul>
+
       <li>I am a student at Boston University. </li>
-      <li>I am majoring in computer science.</li>
+      <li>I am majoring in computer science with a minor in visual arts.</li>
       <li>I hope to one day create my own game design studio!</li>
-    </ul>
+
   </p>
-  </div>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">  
-  <h3 class="margin">Contact</h3>
-
-  <div class="bg-1" style="width:40% ;height:70%; margin:0 auto;text-align:left;padding-left:5px;">
-      
-      <a style="color:white;" href="https://github.com/JBain359/shootingturtle"><div style="padding-left:10px;font-size:36px; " class="fa fa-github-square"></div>  Github: JBain359</a> <br />
-      <a style="color:white;" href="mailto:jbain359@bu.edu"><div style="padding-left:10px; " class="fa fa-mail-forward " ></div></a>  Email: jbain359@bu.edu <br />
-      <a style="color:white;" > <div style="padding-left:10px; " class="fa fa-phone"></div> Phone: (978)-746-4716 </a> <br />
-      <a style="color:white;" href="#"> <div style="padding-left:10px; " class="fa fa-address-card-o"></div> Resume </a> <br />
-  </div> 
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Some of my projects</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Here are some of the coding projects that I have been working on:</p>
-        
-        <ul>
-          <li>Breakout </li>
-          <li>Snake</li>
-          <li>2048</li>
-        </ul>
-      
     </div>
-      
+    <img class = "image-block1"  src ="PixelProfile.PNG">
+  
+
+    
+</div>
+
+<!-- Second Container (Grid) -->
+    <div class="container-fluid bg-2 text-center">      
+        <a name="projects"></a>
+    <img class = "image-block2 "  src ="Collage.PNG">
+    
+    <div class="text-block2">
+      <h3 >My Projects</h3><br>
+      <div >
+        <div   >
+          <p>Click <a href="page1.html">here</a> for some of the coding projects and coursework that I have worked  on in the past.</p>
+
+
+        </div>
+          </div>
     
       
     </div>
   </div>
+
+<!-- Third Container -->
+<div class="container-fluid bg-3 text-center">  
+  
+    <a name="contacts"></a>
+  <div class="text-block1 bg-3">
+      <h3 class="margin" style="color: white;">Talk To Me!</h3>
+      <a style="color:white;" href="mailto:jbain359@bu.edu"><div style="padding-left:10px; " class="fa fa-mail-forward " ></div>  Email: jbain359@bu.edu </a><br />
+      <a style="color:white;" href="https://docs.google.com/document/d/1U7c8FK1V2A4qkCiMsRwrgtQFd5Q-ecdjp9-7yGWZhjo" target="_blank"> <div style="padding-left:10px; " class="fa fa-address-card-o"></div> Resume </a> <br />
+      <a style="color:white;" href="https://www.linkedin.com/in/joseph-bain-07ab98149/" target="_blank"> <div style="padding-left:10px; " class="fa fa-linkedin-square"></div> LinkedIn </a> <br />
+      <a style="color:white;" href="https://github.com/JBain359" target="_blank"><div style="padding-left:10px;font-size:36px; " class="fa fa-github-square"></div>  Github: JBain359</a> <br />
+      <a style="color:white;" > <div style="padding-left:10px; " class="fa fa-phone"></div>Phone: (978)-746-4716 </a> <br />
+  </div>
+    
+    <img class = "image-block1 "  src ="ProJo.jpg">
+    
+</div>
+
+
 </div>
 
 
